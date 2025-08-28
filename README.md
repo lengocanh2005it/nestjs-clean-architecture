@@ -15,15 +15,17 @@ This project provides a basic structure to separate layers like **presentation, 
 
 ```
 src/
-├─ core/ # Domain entities, value objects, domain services
-├─ application/ # Use cases, application DTOs
-├─ infrastructure/ # Database, external services, repositories, modules
-├─ presentation/ # Controllers, DTOs, validation
-├─ shared/ # Common utilities, helpers, constants, interceptors, filters, exceptions, guards
-├─ app.module.ts # Root module of the application
-├─ main.ts # Application entry point
-.env # Environment variables (do not commit)
-.env.example # Example env file
+├─ core/              # Domain entities, value objects, domain services
+├─ application/       # Use cases, application DTOs
+├─ infrastructure/    # Database, external services, repositories, modules
+├─ presentation/      # Controllers, DTOs, validation
+├─ shared/            # Common utilities, helpers, constants, interceptors, filters, exceptions, guards
+├─ app.module.ts      # Root module of the application
+├─ main.ts            # Application entry point
+.env                  # Environment variables (do not commit)
+.env.example          # Example env file
+Dockerfile            # Instructions to build Docker image
+docker-compose.yml    # Define and run multi-container Docker applications
 ```
 
 ## Prerequisites
